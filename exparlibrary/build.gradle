@@ -3,7 +3,6 @@ apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.exparlibrarys'
 version = '1.0'
 
-//com.github.dcendents:android-maven
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -26,14 +25,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'com.android.support:appcompat-v7:26.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    //implementation 'io.socket:socket.io-client:0.8.2'
-    // 'io.pristine:libjingle:8981@aar'
     implementation ('io.pristine:libjingle:8981@aar')
     implementation ('io.socket:socket.io-client:0.8.2')
 
 }
+apply plugin: 'maven'
